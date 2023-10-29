@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 選擇器 | HTML5, CSS3, jQuery, Bootstrap網頁設計基礎班</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/selectors.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 id="title1" class="title">
+            我是.title也是#title1也是h1
+        </h1>
+        <p>我是一個被放在header裡的p</p>
+        <p>我是一個被放在header裡的p</p>
+        <p>前往<a href="https://enn.design/css" target="_blank">CSS語法與屬性簡報</a></p>
+    </header>
+    <!-- header end -->
+    <!-- section -->
+
+    <section>
+        <h1 class="section-title">CSS Selector</h1>
+        <h3>我是.container外面的h3</h3>
+        <p>我是.container外面的p</p>
+        <p>我是.container外面的p</p>
+
+        <div class="container">
+            <p>我是.container裡面的p</p>
+            <p>我是.container裡面的p</p>
+            <div>
+                <p>我是.container裡的div裡面的p</p>
+                <p class="no-bg">我是.container裡的div裡面的p</p>
+            </div>
+            <p>我是.container裡面的p</p>
+        </div>
+
+        <p>我是.container外面的p</p>
+        <p>我是.container外面的p</p>
+    </section>
+    <!-- section end -->
+    <!-- section -->
+    <section class="mt-50">
+        <h1 class="section-title">Articles</h1>
+        <div class="article-list">
+            <article class="article" id="article1">
+                <img src="./images/article1-image.png" alt="The Impact of Technology on Education">
+                <div class="article-body">
+                    <h2>The Impact of Technology on Education</h2>
+                    <div class="line"></div>
+                    <p>
+                        Technology has greatly impacted the way in which schools teach and students learn. Technology
+                        has
+                        made it possible for students to learn at their own pace, rather than feeling pressured to keep
+                        up
+                        with their classmates. It has also made it possible for students to attend classes remotely,
+                        from
+                        anywhere in the world, and for teachers to reach out to students anywhere in the world.
+                        Technology
+                        has also made it possible for students to learn at their own pace, rather than feeling pressured
+                        to
+                        keep up with their classmates. It has also made it possible for students to attend classes
+                        remotely,
+                        from anywhere in the world, and for teachers to reach out to students anywhere in the world.
+                    </p>
+                    <a href="#">More articles</a>
+                </div>
+            </article>
+            <article class="article" id="article2">
+                <img src="./images/article2-image.png" alt="The Benefits of Long-Term Investing">
+                <div class="article-body">
+                    <h2>The Benefits of Long-Term Investing</h2>
+                    <div class="line"></div>
+                    <p>
+                        Long-term investing is a strategy that involves buying and holding securities for a long period
+                        of
+                        time. The goal of long-term investing is to build wealth gradually over an extended period of
+                        time
+                        through the buying and holding of a portfolio of stocks, bonds, mutual funds, and other
+                        investment
+                        vehicles. Long-term investing is a strategy that involves buying and holding securities for a
+                        long
+                        period of time. The goal of long-term investing is to build wealth gradually over an extended
+                        period of time through the buying and holding of a portfolio of stocks, bonds, mutual funds, and
+                        other investment vehicles.
+                    </p>
+                    <a href="#">More articles</a>
+                </div>
+            </article>
+            <article class="article" id="article3">
+                <img src="./images/article3-image.png"
+                    alt="The Importance of Conservation: Protecting Our Natural Heritage">
+                <div class="article-body">
+                    <h2>The Importance of Conservation: Protecting Our Natural Heritage</h2>
+                    <div class="line"></div>
+                    <p>
+                        Our planet is home to a diverse range of ecosystems and species that contribute to the overall
+                        health and balance of the Earth. However, human activities and environmental challenges pose
+                        significant threats to our natural heritage. This article explores the importance of
+                        conservation
+                        and why protecting and preserving our natural resources is crucial for the well-being of both
+                        present and future generations.
+                    </p>
+                    <a href="#">More articles</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- section end -->
+    <!-- section -->
+    <section class="mt-50">
+        <h2>延伸學習</h2>
+        <a class="btn" target="_blank" href="https://www.w3schools.com/cssref/css_selectors.asp">
+            <span>
+                🔗 W3Schools CSS Selectors
+            </span>
+        </a>
+        <a class="btn" target="_blank" href="https://flukeout.github.io/">
+            <span>
+                🔗 CSS Diner
+            </span>
+        </a>
+    </section>
+    <!-- section end  -->
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; <a target="_blank" href="https://github.com/andy19910102">
+                Huang An Sheng <i class="fa-brands fa-github-alt"></i></a> </p>
+    </footer>
+    <!-- footer end -->
+    <script src="./js/selectors.js"></script>
+</body>
+
+</html>

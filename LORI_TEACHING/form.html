@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML表單 | HTML5, CSS3, jQuery, Bootstrap網頁設計基礎班</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <!-- 卡片 -->
+    <div class="form-box">
+        <!-- 卡片標題區 -->
+        <header class="form-header">
+            <h1>HTML表單</h1>
+            <h2 id="output"></h2>
+            <p>歡迎來到我的網站，如您有任何問題可透過下方的表單與我聯繫。</p>
+            <p>此表單使用了 <a href="https://formspree.io/" target="_blank">FormSpree API</a> 完成表單串接應用。</p>
+        </header>
+        <!-- 卡片標題區 end -->
+        <!-- 表單 -->
+        <!-- 
+            將表單資料寄送至 FormSpree API 
+            規則文件：https://formspree.io/ 
+        -->
+        <section>
+            <form action="https://formspree.io/f/xaygadal" method="POST" class="form-body">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="Email" id="email" type="email" class="form-control" placeholder="請輸入您的Email" required>
+                    <!-- reuqired必填 -->
+                    <!-- type用email檢查 --><!-- 驗證流程例如mail @ 前後有沒有資料 html 5後就可以寫在html內不用js-->
+
+
+                </div>
+                <div class="form-group">
+                    <label for="username">姓名</label>
+                    <input name="姓名" id="username" type="text" class="form-control" placeholder="請輸入您的姓名"
+                        value="預設姓名..." required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">您想跟我說的話</label>
+                    <textarea name="留言" id="comment" maxlength="11" rows="4" class="form-control"
+                        placeholder="請輸入留言...." required></textarea>
+                    <!-- maxlength字數限制 -->
+                    <!-- id 跟class id不可重覆/html 身份證字號 vs CLASS分類 -->
+
+                </div>
+
+                <!-- .form-group > LABEL 按下tabel -->
+                <!-- option * 3  -->
+
+                <div class="form-group">
+                    <label for="foavor">喜好資訊</label>
+                    <select name="喜好資訊" id="foavor" class="form-control">
+                        <option value="food">美食</option>
+                        <option value="fashion">時尚</option>
+                        <option value="pet">寵物</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="source"></label>
+                    <select name="來源" id="source" class="form-control">
+                        <option value="AD">網路廣告</option>
+                        <option value="FACEBOOK">facebook</option>
+                        <option value="FRIEND">親友介紹</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button class="submit-btn" type="submit">送出表單</button>
+                </div>
+            </form>
+        </section>
+        <!-- 表單 end -->
+    </div>
+    <!-- 卡片 end -->
+</body>
+
+</html>
